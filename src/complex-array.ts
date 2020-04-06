@@ -87,11 +87,7 @@ let complexArrayMixin = {
 
 
 function getGoodAdds(complexArray: ComplexArray, adds: ComplexObject[]) {
-  // remove any that are already added here
-  return adds.filter(function (a) {
-    // return a.parent !== complexArray.parent;  // TODO: check if this is actually a bug in original breezejs ???
-    return a.complexAspect == null || a.complexAspect.parent !== complexArray.parent;
-  });
+  return adds;
 }
 
 function processAdds(complexArray: ComplexArray, adds: ComplexObject[]) {
